@@ -1,14 +1,14 @@
 {
   description = "Justin's Neovim Config";
 
-  nixConfig = {
-    substitutors = [
-      "https://sonntag.cachix.org"
-    ];
-    trusted-public-keys = [
-      "sonntag.cachix.org-1:4rHXwjmC/EpRwVkCyH0xLQaoeZT9C0oq8TINGSap1Wk="
-    ];
-  };
+  # nixConfig = {
+  #   substitutors = [
+  #     "https://sonntag.cachix.org"
+  #   ];
+  #   trusted-public-keys = [
+  #     "sonntag.cachix.org-1:4rHXwjmC/EpRwVkCyH0xLQaoeZT9C0oq8TINGSap1Wk="
+  #   ];
+  # };
 
   outputs = inputs: inputs.flake-parts.lib.mkFlake {inherit inputs;} (inputs.import-tree ./modules);
 

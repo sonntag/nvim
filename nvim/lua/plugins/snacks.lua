@@ -16,12 +16,19 @@ return {
     end,
     keys = {
         -- Top Pickers & Explorer
+        -- {
+        --     "<leader><space>",
+        --     function()
+        --         Snacks.picker.smart()
+        --     end,
+        --     desc = "Smart Find Files",
+        -- },
         {
             "<leader><space>",
             function()
-                Snacks.picker.smart()
+                Snacks.picker.resume()
             end,
-            desc = "Smart Find Files",
+            desc = "Resume last search",
         },
         {
             "<leader>,",
@@ -60,13 +67,13 @@ return {
         },
 
         -- find
-        {
-            "<leader>fb",
-            function()
-                Snacks.picker.buffers()
-            end,
-            desc = "Buffers",
-        },
+        -- {
+        --     "<leader>fb",
+        --     function()
+        --         Snacks.picker.buffers()
+        --     end,
+        --     desc = "Buffers",
+        -- },
         {
             "<leader>fc",
             function()
@@ -74,20 +81,20 @@ return {
             end,
             desc = "Find Config File",
         },
-        {
-            "<leader>ff",
-            function()
-                Snacks.picker.files()
-            end,
-            desc = "Find Files",
-        },
-        {
-            "<leader>fg",
-            function()
-                Snacks.picker.git_files()
-            end,
-            desc = "Find Git Files",
-        },
+        -- {
+        --     "<leader>ff",
+        --     function()
+        --         Snacks.picker.files()
+        --     end,
+        --     desc = "Find Files",
+        -- },
+        -- {
+        --     "<leader>fg",
+        --     function()
+        --         Snacks.picker.git_files()
+        --     end,
+        --     desc = "Find Git Files",
+        -- },
         {
             "<leader>fp",
             function()
@@ -95,63 +102,63 @@ return {
             end,
             desc = "Projects",
         },
-        {
-            "<leader>fr",
-            function()
-                Snacks.picker.recent()
-            end,
-            desc = "Recent",
-        },
+        -- {
+        --     "<leader>fr",
+        --     function()
+        --         Snacks.picker.recent()
+        --     end,
+        --     desc = "Recent",
+        -- },
         -- git
-        {
-            "<leader>gb",
-            function()
-                Snacks.picker.git_branches()
-            end,
-            desc = "Git Branches",
-        },
-        {
-            "<leader>gl",
-            function()
-                Snacks.picker.git_log()
-            end,
-            desc = "Git Log",
-        },
-        {
-            "<leader>gL",
-            function()
-                Snacks.picker.git_log_line()
-            end,
-            desc = "Git Log Line",
-        },
-        {
-            "<leader>gs",
-            function()
-                Snacks.picker.git_status()
-            end,
-            desc = "Git Status",
-        },
-        {
-            "<leader>gS",
-            function()
-                Snacks.picker.git_stash()
-            end,
-            desc = "Git Stash",
-        },
-        {
-            "<leader>gd",
-            function()
-                Snacks.picker.git_diff()
-            end,
-            desc = "Git Diff (Hunks)",
-        },
-        {
-            "<leader>gf",
-            function()
-                Snacks.picker.git_log_file()
-            end,
-            desc = "Git Log File",
-        },
+        -- {
+        --     "<leader>gb",
+        --     function()
+        --         Snacks.picker.git_branches()
+        --     end,
+        --     desc = "Git Branches",
+        -- },
+        -- {
+        --     "<leader>gl",
+        --     function()
+        --         Snacks.picker.git_log()
+        --     end,
+        --     desc = "Git Log",
+        -- },
+        -- {
+        --     "<leader>gL",
+        --     function()
+        --         Snacks.picker.git_log_line()
+        --     end,
+        --     desc = "Git Log Line",
+        -- },
+        -- {
+        --     "<leader>gs",
+        --     function()
+        --         Snacks.picker.git_status()
+        --     end,
+        --     desc = "Git Status",
+        -- },
+        -- {
+        --     "<leader>gS",
+        --     function()
+        --         Snacks.picker.git_stash()
+        --     end,
+        --     desc = "Git Stash",
+        -- },
+        -- {
+        --     "<leader>gd",
+        --     function()
+        --         Snacks.picker.git_diff()
+        --     end,
+        --     desc = "Git Diff (Hunks)",
+        -- },
+        -- {
+        --     "<leader>gf",
+        --     function()
+        --         Snacks.picker.git_log_file()
+        --     end,
+        --     desc = "Git Log File",
+        -- },
         -- Grep
         {
             "<leader>sb",
@@ -167,13 +174,13 @@ return {
             end,
             desc = "Grep Open Buffers",
         },
-        {
-            "<leader>sg",
-            function()
-                Snacks.picker.grep()
-            end,
-            desc = "Grep",
-        },
+        -- {
+        --     "<leader>sg",
+        --     function()
+        --         Snacks.picker.grep()
+        --     end,
+        --     desc = "Grep",
+        -- },
         {
             "<leader>sw",
             function()
@@ -212,15 +219,15 @@ return {
             end,
             desc = "Buffer Lines",
         },
+        -- {
+        --     "<leader>sc",
+        --     function()
+        --         Snacks.picker.command_history()
+        --     end,
+        --     desc = "Command History",
+        -- },
         {
             "<leader>sc",
-            function()
-                Snacks.picker.command_history()
-            end,
-            desc = "Command History",
-        },
-        {
-            "<leader>sC",
             function()
                 Snacks.picker.commands()
             end,
@@ -296,26 +303,19 @@ return {
             end,
             desc = "Man Pages",
         },
-        {
-            "<leader>sp",
-            function()
-                Snacks.picker.lazy()
-            end,
-            desc = "Search for Plugin Spec",
-        },
+        -- {
+        --     "<leader>sp",
+        --     function()
+        --         Snacks.picker.lazy()
+        --     end,
+        --     desc = "Search for Plugin Spec",
+        -- },
         {
             "<leader>sq",
             function()
                 Snacks.picker.qflist()
             end,
             desc = "Quickfix List",
-        },
-        {
-            "<leader>sR",
-            function()
-                Snacks.picker.resume()
-            end,
-            desc = "Resume",
         },
         {
             "<leader>su",
