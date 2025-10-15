@@ -2,7 +2,7 @@ return {
     "fff.nvim",
     keys = {
         {
-            "<leader>ff",
+            "ff",
             function()
                 require("fff").find_files()
             end,
