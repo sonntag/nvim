@@ -52,9 +52,3 @@ end, { desc = "append", expr = true, noremap = true })
 vim.keymap.set("n", "A", function()
     return string.match(vim.api.nvim_get_current_line(), "%g") == nil and "S" or "A"
 end, { desc = "append at end of line", expr = true, noremap = true })
-
--- TODO: remove these keymaps when tmux-navigator is fixed
--- vim.keymap.set("n", "<C-h>", "<C-w>h")
--- vim.keymap.set("n", "<C-j>", "<C-w>j")
--- vim.keymap.set("n", "<C-k>", "<C-w>k")
--- vim.keymap.set("n", "<C-l>", "<C-w>l")
