@@ -4,6 +4,7 @@ return {
         require("which-key").setup({
             delay = 0,
             spec = {
+                { "<leader>a", group = "[a]i" },
                 { "<leader>b", group = "[b]uffer" },
                 { "<leader>c", group = "[c]ode" },
                 { "<leader>d", group = "[d]ocument" },
@@ -12,6 +13,7 @@ return {
                 { "<leader>h", group = "git [h]unk" },
                 { "<leader>q", group = "[q]uit" },
                 { "<leader>s", group = "[s]earch" },
+                { "<leader>u", group = "[u]i toggles" },
                 { "<leader>w", group = "[w]indow" },
 
                 { "g", group = "[g]oto/[g]lobal" },
