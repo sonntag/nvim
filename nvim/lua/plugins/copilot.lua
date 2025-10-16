@@ -5,12 +5,12 @@ return {
             server = {
                 type = "binary",
             },
-            suggestion = {
-                auto_trigger = true,
-                keymap = {
-                    accept = "<tab>",
-                },
-            },
+            -- suggestion = {
+            --     auto_trigger = true,
+            --     keymap = {
+            --         accept = "<tab>",
+            --     },
+            -- },
             -- nes = {
             --     enable = true,
             --     accept_and_goto = "<leader>p",

@@ -39,6 +39,19 @@
       "url": "https://github.com/FabijanZulj/blame.nvim/archive/d5f4ad5c8ebca3caecc773dda5983709c5a5da8f.tar.gz",
       "hash": "0vgwdb1x5vjsfw5xznnw00w9h1rfcc5h1cv4crfq8dh000iqmzr0"
     },
+    "codecompanion.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "olimorris",
+        "repo": "codecompanion.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "09e6a8f5576f0e68638c7730d21dcede9d43f372",
+      "url": "https://github.com/olimorris/codecompanion.nvim/archive/09e6a8f5576f0e68638c7730d21dcede9d43f372.tar.gz",
+      "hash": "1wr60cldc4iv7ay9bgkz4myw0ga8xrsr4i57xc85hr4g7667wnk1"
+    },
     "conform.nvim": {
       "type": "Git",
       "repository": {
@@ -285,6 +298,19 @@
       "revision": "e99a88f0f0b1234f49a3efe9c49b712b58a5acfc",
       "url": "https://github.com/dundalek/parpar.nvim/archive/e99a88f0f0b1234f49a3efe9c49b712b58a5acfc.tar.gz",
       "hash": "09y0q4shgi8a88z42lrkh41ay64yhb7050rlc3b6r2lk6k72xdqz"
+    },
+    "plenary.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvim-lua",
+        "repo": "plenary.nvim"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "b9fd5226c2f76c951fc8ed5923d85e4de065e509",
+      "url": "https://github.com/nvim-lua/plenary.nvim/archive/b9fd5226c2f76c951fc8ed5923d85e4de065e509.tar.gz",
+      "hash": "1kg043h7dqcrqqgg8pp6hsldx7jdhlh8qwad2kkckia191xgnjgm"
     },
     "rose-pine": {
       "type": "Git",
