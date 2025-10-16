@@ -13,6 +13,7 @@ vim.o.splitright = true
 vim.o.timeoutlen = 300
 vim.o.undofile = true
 vim.o.updatetime = 250
+vim.o.virtualedit = "all"
 vim.o.winborder = "rounded"
 vim.o.wrap = false
 
