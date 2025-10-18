@@ -33,5 +33,5 @@ return {
             },
         })
     end,
-    lazy = false,
+    event = "DeferredUIEnter",
 }

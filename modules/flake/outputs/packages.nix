@@ -29,10 +29,15 @@
           alejandra
           copilot-language-server
           fd
+          imagemagick
           mdformat
           marksman
           nixd
           ripgrep
+        ];
+
+        extraLuaPackages = ps: [
+          ps.magick
         ];
 
         initLua = builtins.readFile ../../../init.lua;
