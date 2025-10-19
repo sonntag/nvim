@@ -5,6 +5,7 @@ return {
     end,
     after = function()
         require("codecompanion").setup()
+        vim.cmd([[cab cc CodeCompanion]])
     end,
     keys = {
         { "<leader>aa", "<cmd>CodeCompanionChat Toggle<cr>", desc = "Toggle AI chat" },

@@ -28,8 +28,6 @@ vim.g.health = {
     style = "float",
 }
 
-vim.cmd([[cab cc CodeCompanion]])
-
 -- Diagnostic options
 vim.diagnostic.config({
     virtual_lines = {
