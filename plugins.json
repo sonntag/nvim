@@ -364,6 +364,19 @@
       "url": "https://github.com/folke/snacks.nvim/archive/454ba02d69347c0735044f159b95d2495fc79a73.tar.gz",
       "hash": "121hs6ikvhc72p33spr9mn72jhy9rl0ybv1nvrqvz5m46jznzk8s"
     },
+    "tabout.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "abecodes",
+        "repo": "tabout.nvim"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "9a3499480a8e53dcaa665e2836f287e3b7764009",
+      "url": "https://github.com/abecodes/tabout.nvim/archive/9a3499480a8e53dcaa665e2836f287e3b7764009.tar.gz",
+      "hash": "1mjnzrz2zh8kd95p12l70zmpw7nf5xnlr4pwss51s2cgy1wyfgz5"
+    },
     "todo-comments.nvim": {
       "type": "Git",
       "repository": {

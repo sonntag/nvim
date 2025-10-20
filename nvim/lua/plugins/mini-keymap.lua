@@ -34,11 +34,13 @@ return {
 
         map_multistep("i", "<bs>", bs_steps)
 
-        -- local tabout_condition = function() return true end
-        --
-        -- local tabout_action = function()
-        --   return "<Plug>(TaboutMulti)"
-        -- end
+        local tabout_condition = function()
+            return true
+        end
+
+        local tabout_action = function()
+            return "<Plug>(TaboutMulti)"
+        end
 
         -- 1. if autocompletion is showing but nothing has been selected yet, then <tab> will select and fill out the first item in the list
         -- 2. after the first <tab> press, further <tab> presses will cycle through the items on the list.
@@ -48,8 +50,9 @@ return {
         local tab_steps = {
             "blink_next",
             "luasnip_next",
-            "jump_after_close",
-            -- {condition = tabout_condition, action = tabout_action}
+            -- "jump_after_close",
+            { condition = tabout_condition, action = tabout_action },
+            -- { action = tabout_action },
         }
 
         map_multistep("i", "<tab>", tab_steps)
