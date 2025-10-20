@@ -11,6 +11,7 @@ return {
                 { "<leader>f", group = "[f]ind" },
                 { "<leader>g", group = "[g]it" },
                 { "<leader>h", group = "git [h]unk" },
+                { "<leader>p", group = "[p]rofiler" },
                 { "<leader>q", group = "[q]uit" },
                 { "<leader>s", group = "[s]earch" },
                 { "<leader>u", group = "[u]i toggles" },

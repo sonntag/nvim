@@ -10,6 +10,11 @@ return {
         vim.keymap.set("n", "<leader>gg", function()
             Snacks.lazygit()
         end, { desc = "Lazygit" })
+
+        -- Toggle the profiler
+        Snacks.toggle.profiler():map("<leader>pp")
+        -- Toggle the profiler highlights
+        Snacks.toggle.profiler_highlights():map("<leader>ph")
     end,
     before = function()
         require("lz.n").trigger_load("mini.icons")
@@ -381,6 +386,15 @@ return {
                 Snacks.picker.lsp_workspace_symbols()
             end,
             desc = "LSP Workspace Symbols",
+        },
+
+        -- Profiler
+        {
+            "<leader>ps",
+            function()
+                Snacks.profiler.scratch()
+            end,
+            desc = "Profiler Scratch Bufer",
         },
     },
     event = "DeferredUIEnter",
