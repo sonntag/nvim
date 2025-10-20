@@ -4,4 +4,5 @@ return {
         require("ultimate-autopair").setup({})
     end,
     event = { "InsertEnter", "CmdlineEnter" },
+    enabled = false,
 }
