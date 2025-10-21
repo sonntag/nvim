@@ -8,6 +8,6 @@ runs:
       run: |
         curl -X POST \
         -H "Accept: application/vnd.github.v3+json" \
-        -H "Authorization: token ${{ secrets.TARGET_REPO_PAT }}" \
+        -H "Authorization: token ${{ secrets.SONNTAG_NIX_ACTIONS_PAT }}" \
         https://api.github.com/repos/sonntag/nix/dispatches \
         -d '{"event_type":"nvim-flake-changes"}'
