@@ -60,14 +60,11 @@ jobs:
           - nightly
         system:
           - x86_64-linux
-          - x86_64-darwin
           - aarch64-linux
           - aarch64-darwin
         include:
           - system: x86_64-linux
             runner: ubuntu-latest
-          - system: x86_64-darwin
-            runner: macos-13
           - system: aarch64-linux
             runner: ubuntu-24.04-arm
           - system: aarch64-darwin
@@ -97,6 +94,8 @@ jobs:
     needs: [update, build]
     if: (needs.update.outputs.lock_changed == 'true' || needs.update.outputs.plugins_changed) && needs.build.result == 'success'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
