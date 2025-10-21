@@ -116,3 +116,6 @@ jobs:
           git add plugins.json
           git commit -m "chore: weekly flake update"
           git push origin main
+
+      - name: Notify sonntag/nix flake
+        uses: ./.github/actions/notify-nix-flake
