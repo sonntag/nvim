@@ -118,4 +118,6 @@ jobs:
           git push origin main
 
       - name: Notify sonntag/nix flake
-        uses: ./.github/actions/notify-nix-flake
+        uses: sonntag/nix/.github/actions/notify-nix-flake@{main}
+        with:
+          auth-token: ${{ secrets.SONNTAG_NIX_ACTIONS_PAT }}
