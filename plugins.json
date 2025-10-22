@@ -360,9 +360,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "d31f50f0a702ca10340b3cf6b684c788d6513836",
-      "url": "https://github.com/folke/snacks.nvim/archive/d31f50f0a702ca10340b3cf6b684c788d6513836.tar.gz",
-      "hash": "032js26igd7w9lrygniy42rsvxqfd5662xgrrc4v69h3grn50rry"
+      "revision": "2aee35d0591f80b4a186e0ad3c600cd05c3f2a4d",
+      "url": "https://github.com/folke/snacks.nvim/archive/2aee35d0591f80b4a186e0ad3c600cd05c3f2a4d.tar.gz",
+      "hash": "1wfl193v8gyadazi29jjqk4yy3rbbnqa3m03hynxf0sbk2l5a7n6"
     },
     "tabout.nvim": {
       "type": "Git",
