@@ -377,6 +377,19 @@
       "url": "https://github.com/abecodes/tabout.nvim/archive/9a3499480a8e53dcaa665e2836f287e3b7764009.tar.gz",
       "hash": "1mjnzrz2zh8kd95p12l70zmpw7nf5xnlr4pwss51s2cgy1wyfgz5"
     },
+    "tiny-inline-diagnostic.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "rachartier",
+        "repo": "tiny-inline-diagnostic.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "7925ecd32835d28f1e03ac02936147c9cefe84ed",
+      "url": "https://github.com/rachartier/tiny-inline-diagnostic.nvim/archive/7925ecd32835d28f1e03ac02936147c9cefe84ed.tar.gz",
+      "hash": "0bx30d2yxvnsxq33n95k3rnrjmwr0n1hb28y0ca6jzppg7nkan41"
+    },
     "todo-comments.nvim": {
       "type": "Git",
       "repository": {
