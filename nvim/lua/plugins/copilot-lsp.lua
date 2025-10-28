@@ -22,4 +22,5 @@ return {
         -- end, { desc = "Accept Copilot NES suggestion", expr = true })
     end,
     event = "DeferredUIEnter",
+    enabled = false,
 }

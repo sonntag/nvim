@@ -1,5 +1,8 @@
 return {
     "mini.keymap",
+    -- before = function()
+    --     require("lz.n").trigger_load("ultimate-autopair.nvim")
+    -- end,
     after = function()
         local map_multistep = require("mini.keymap").map_multistep
 
@@ -50,9 +53,7 @@ return {
         local tab_steps = {
             "blink_next",
             "luasnip_next",
-            -- "jump_after_close",
             { condition = tabout_condition, action = tabout_action },
-            -- { action = tabout_action },
         }
 
         map_multistep("i", "<tab>", tab_steps)
