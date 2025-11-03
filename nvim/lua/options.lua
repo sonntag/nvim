@@ -30,6 +30,9 @@ vim.g.health = {
 
 -- Diagnostic options
 vim.diagnostic.config({
+    virtual_lines = {
+        current_line = true,
+    },
     signs = {
         text = {
             [vim.diagnostic.severity.ERROR] = "",
