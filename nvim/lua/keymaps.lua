@@ -26,7 +26,13 @@ map("n", "j", "v:count == 0 ? 'gj' : 'j'", { desc = "Down", expr = true, silent 
 map("n", "k", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true })
 
 -- Tab management
--- TODO
+map("n", "<leader>tt", "<cmd>tabnew<cr>", { desc = "New Tab" })
+map("n", "<leader>td", "<cmd>tabclose<cr>", { desc = "Close Tab" })
+map("n", "<leader>to", "<cmd>tabonly<cr>", { desc = "Close Other Tabs" })
+map("n", "<leader>tf", "<cmd>tabfirst<cr>", { desc = "First Tab" })
+map("n", "<leader>tl", "<cmd>tablast<cr>", { desc = "Last Tab" })
+map("n", "<leader>tn", "<cmd>tabnext<cr>", { desc = "Next Tab" })
+map("n", "<leader>tp", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 
 -- Buffer management
 map("n", "<S-h>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })

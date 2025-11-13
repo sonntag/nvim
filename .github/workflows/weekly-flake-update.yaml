@@ -1,0 +1,123 @@
+name: Weekly Nix Flake Update
+
+on:
+  schedule:
+    - cron: 0 7 * * 1 # Runs weekly on Monday at 7 am
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    outputs:
+      lock_changed: ${{ steps.update-lock.outputs.lock_changed }}
+      plugins_changed: ${{ steps.update-plugins.outputs.plugins_changed }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v12
+
+      - name: Update flake.lock
+        id: update-lock
+        run: |
+          nix flake update
+          if git diff --quiet flake.lock; then
+            echo "No lockfile changes detected."
+            echo "lock_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git add flake.lock
+            echo "lock_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Update plugins.json
+        id: update-plugins
+        run: |
+          nix run --quiet nixpkgs#npins -- --lock-file plugins.json update --full 2>&1
+          if git diff --quiet plugins.json; then
+            echo "No plugin changes detected."
+            echo "plugins_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git add plugins.json
+            echo "plugins_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Upload updated flake for build jobs
+        if: steps.update-lock.outputs.lock_changed == 'true' || steps.update-plugins.outputs.plugins_changed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: updated-flake
+          path: .
+
+  build:
+    needs: update
+    if: needs.update.outputs.lock_changed == 'true' || needs.update.outputs.plugins_changed == 'true'
+    strategy:
+      fail-fast: false
+      matrix:
+        package:
+          - stable
+          - nightly
+        system:
+          - x86_64-linux
+          - aarch64-linux
+          - aarch64-darwin
+        include:
+          - system: x86_64-linux
+            runner: ubuntu-latest
+          - system: aarch64-linux
+            runner: ubuntu-24.04-arm
+          - system: aarch64-darwin
+            runner: macos-latest
+    runs-on: ${{ matrix.runner }}
+
+    steps:
+      - name: Download updated flake
+        uses: actions/download-artifact@v4
+        with:
+          name: updated-flake
+          path: .
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v12
+
+      - name: Set up Cachix
+        uses: cachix/cachix-action@v14
+        with:
+          name: sonntag
+          authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
+
+      - name: Build ${{ matrix.system }} on ${{ matrix.package }}
+        run: nix build .#${{ matrix.package }} --system ${{ matrix.system }} --accept-flake-config
+
+  commit:
+    needs: [update, build]
+    if: (needs.update.outputs.lock_changed == 'true' || needs.update.outputs.plugins_changed) && needs.build.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download updated flake
+        uses: actions/download-artifact@v4
+        with:
+          name: updated-flake
+          path: .
+
+      - name: Commit and push updated lock file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet flake.lock plugins.json && echo "No changes to commit." && exit 0
+          git add flake.lock
+          git add plugins.json
+          git commit -m "chore: weekly flake update"
+          git push origin main
+
+      - name: Notify sonntag/nix flake
+        uses: sonntag/nix/.github/actions/notify-nix-flake@main
+        with:
+          auth-token: ${{ secrets.SONNTAG_NIX_ACTIONS_PAT }}
