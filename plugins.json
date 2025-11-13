@@ -91,6 +91,19 @@
       "url": "https://github.com/zbirenbaum/copilot.lua/archive/92e08cd472653beaece28ad9c8508a851a613358.tar.gz",
       "hash": "031pfblrh4m1r9z05f5mzmxmvlwqzycmjyq3zk2nv538l7pi03i7"
     },
+    "diffview.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "sindrets",
+        "repo": "diffview.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "4516612fe98ff56ae0415a259ff6361a89419b0a",
+      "url": "https://github.com/sindrets/diffview.nvim/archive/4516612fe98ff56ae0415a259ff6361a89419b0a.tar.gz",
+      "hash": "0brabpd02596hg98bml118bx6z2sly98kf1cr2p0xzybiinb4zs9"
+    },
     "fidget.nvim": {
       "type": "Git",
       "repository": {
