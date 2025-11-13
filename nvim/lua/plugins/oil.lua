@@ -21,5 +21,5 @@ return {
     end,
     cmd = "Oil",
     lazy = vim.fn.argc(-1) == 0,
-    keys = { { "-", "<cmd>Oil<CR>", desc = "Open parent directory" } },
+    keys = { { "-", "<cmd>Oil<cr>", desc = "Open parent directory" } },
 }

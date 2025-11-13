@@ -3,4 +3,5 @@ return {
     after = function()
         require("fidget").setup({})
     end,
+    event = "DeferredUIEnter",
 }
