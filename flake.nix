@@ -59,7 +59,13 @@
       inputs = {
         nixpkgs.follows = "nixpkgs";
         flake-utils.follows = "flake-utils";
+        rust-overlay.follows = "rust-overlay";
       };
+    };
+
+    rust-overlay = {
+      url = "github:oxalica/rust-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # This is necessary since fff-nvim depends on flake-utils, which depends on systems
