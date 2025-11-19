@@ -429,6 +429,19 @@
       "url": "https://github.com/altermo/ultimate-autopair.nvim/archive/72e160cb1ce8c0db2ac4315f77d97420a2f4223d.tar.gz",
       "hash": "181x3v2a0ysynyd0gvqh1ddb2c8lk2fl91j1kv1zzhf5vx9g5bc0"
     },
+    "vim-illuminate": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "RRethy",
+        "repo": "vim-illuminate"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "0d1e93684da00ab7c057410fecfc24f434698898",
+      "url": "https://github.com/RRethy/vim-illuminate/archive/0d1e93684da00ab7c057410fecfc24f434698898.tar.gz",
+      "hash": "0456q474765p0r0q7frn1n9drl05d16alv7kn9qnw1235d20k81a"
+    },
     "vim-tmux-navigator": {
       "type": "Git",
       "repository": {
