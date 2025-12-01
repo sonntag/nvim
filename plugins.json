@@ -39,19 +39,6 @@
       "url": "https://github.com/FabijanZulj/blame.nvim/archive/f3f6153ea94e1120f2776f22bbbd63c4aeebaf32.tar.gz",
       "hash": "05q4wwz9rm1ycjg536ys3jsdqlnndhpm8jm6vb4wqlza3gqgm3h9"
     },
-    "blink.compat": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "saghen",
-        "repo": "blink.compat"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "1454f14a8d855a578ceeba77c62538fa1459a67c",
-      "url": "https://github.com/saghen/blink.compat/archive/1454f14a8d855a578ceeba77c62538fa1459a67c.tar.gz",
-      "hash": "132w0z919fvj5wmjyfkpr59f6pidg522l4hsf2c03033d3xh5i0h"
-    },
     "codecompanion.nvim": {
       "type": "Git",
       "repository": {
