@@ -39,6 +39,19 @@
       "url": "https://github.com/FabijanZulj/blame.nvim/archive/f3f6153ea94e1120f2776f22bbbd63c4aeebaf32.tar.gz",
       "hash": "05q4wwz9rm1ycjg536ys3jsdqlnndhpm8jm6vb4wqlza3gqgm3h9"
     },
+    "blink.compat": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "saghen",
+        "repo": "blink.compat"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "1454f14a8d855a578ceeba77c62538fa1459a67c",
+      "url": "https://github.com/saghen/blink.compat/archive/1454f14a8d855a578ceeba77c62538fa1459a67c.tar.gz",
+      "hash": "132w0z919fvj5wmjyfkpr59f6pidg522l4hsf2c03033d3xh5i0h"
+    },
     "codecompanion.nvim": {
       "type": "Git",
       "repository": {
@@ -64,6 +77,19 @@
       "revision": "4993e07fac6679d0a5005aa7499e0bad2bd39f19",
       "url": "https://github.com/stevearc/conform.nvim/archive/4993e07fac6679d0a5005aa7499e0bad2bd39f19.tar.gz",
       "hash": "1xz1b8v08l6qmrd98arhq6141sw75hnqf3p48zhc0wsdhphh5f74"
+    },
+    "conjure": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "Olical",
+        "repo": "conjure"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "a02dd9d510ac86c76411e4bf5d4fd49595176487",
+      "url": "https://github.com/Olical/conjure/archive/a02dd9d510ac86c76411e4bf5d4fd49595176487.tar.gz",
+      "hash": "027mrdxw587wb34vxbklpbgybraw4mvmfgpx8qxalcashl1wxdfd"
     },
     "copilot-lsp": {
       "type": "Git",
