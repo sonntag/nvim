@@ -21,4 +21,5 @@ return {
     end,
     cmd = "Copilot",
     event = "InsertEnter",
+    enabled = false,
 }

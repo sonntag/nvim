@@ -12,4 +12,5 @@ return {
             group = vim.api.nvim_create_augroup("otter-lsp-attach", { clear = true }),
         })
     end,
+    enabled = false,
 }
