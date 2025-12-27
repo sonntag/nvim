@@ -6,10 +6,32 @@
     pkgs,
     system,
     ...
-  }: {
+  }: let
+    # Build Luna grammar as a plugin with parser and queries
+    tree-sitter-luna-plugin = pkgs.stdenv.mkDerivation {
+      pname = "tree-sitter-luna-plugin";
+      version = "0.1.0";
+      src = inputs.tree-sitter-luna;
+      nativeBuildInputs = [pkgs.nodejs pkgs.tree-sitter];
+      buildPhase = ''
+        runHook preBuild
+        tree-sitter generate
+        $CC -shared -fPIC -o luna.so src/parser.c -I src
+        runHook postBuild
+      '';
+      installPhase = ''
+        runHook preInstall
+        mkdir -p $out/parser $out/queries
+        cp luna.so $out/parser/luna.so
+        cp -r queries/luna $out/queries/
+        runHook postInstall
+      '';
+    };
+  in {
     sonntag = {
       startPlugins = with pkgs.vimPlugins; [
         lz-n
+        tree-sitter-luna-plugin
       ];
 
       optPlugins = with pkgs.vimPlugins;

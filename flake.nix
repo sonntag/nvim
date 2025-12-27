@@ -14,6 +14,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    tree-sitter-luna.url = "github:sonntag/tree-sitter-luna";
     systems.url = "github:nix-systems/default";
     flake-compat.url = "github:edolstra/flake-compat";
     import-tree.url = "github:vic/import-tree";

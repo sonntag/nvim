@@ -1,6 +1,15 @@
 return {
     "nvim-treesitter",
     after = function()
+        -- Register Luna filetype
+        vim.filetype.add({
+            extension = {
+                luna = "luna",
+            },
+        })
+
+        vim.treesitter.language.register("luna", "luna")
+
         ---@diagnostic disable: missing-fields
         require("nvim-treesitter.configs").setup({
             highlight = {
