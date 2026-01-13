@@ -16,7 +16,7 @@ return {
             formatters_by_ft = {
                 clojure = { "cljstyle" },
                 lua = { "stylua" },
-                markdown = { "mdformat" },
+                -- markdown = { "mdformat" },
                 nix = { "alejandra" },
             },
         })
