@@ -10,14 +10,15 @@ return {
 
         vim.treesitter.language.register("luna", "luna")
 
-        ---@diagnostic disable: missing-fields
-        require("nvim-treesitter.configs").setup({
-            highlight = {
-                enable = true,
-            },
-            indent = {
-                enable = true,
-            },
+        -- Main branch: enable treesitter highlighting and indentation for all supported filetypes
+        vim.api.nvim_create_autocmd("FileType", {
+            callback = function(args)
+                -- Only enable if a parser exists for this filetype
+                if pcall(vim.treesitter.start, args.buf) then
+                    -- Enable treesitter-based indentation
+                    vim.bo[args.buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+                end
+            end,
         })
     end,
     event = { "BufNewFile", "BufReadPost", "BufWritePost", "DeferredUIEnter" },
