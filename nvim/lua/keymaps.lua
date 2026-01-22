@@ -58,3 +58,30 @@ end, { desc = "append", expr = true, noremap = true })
 vim.keymap.set("n", "A", function()
     return string.match(vim.api.nvim_get_current_line(), "%g") == nil and "S" or "A"
 end, { desc = "append at end of line", expr = true, noremap = true })
+
+-- Smart paste for parinfer: disable parinfer, paste, format, re-enable
+local function smart_paste(paste_cmd)
+    return function()
+        local parinfer_was_enabled = vim.b.parinfer_enabled
+
+        if parinfer_was_enabled then
+            vim.cmd("ParinferOff")
+        end
+
+        -- Execute the paste
+        vim.cmd("normal! " .. paste_cmd)
+
+        -- Format with conform (synchronous)
+        local ok, conform = pcall(require, "conform")
+        if ok then
+            conform.format({ async = false, lsp_format = "fallback" })
+        end
+
+        if parinfer_was_enabled then
+            vim.cmd("ParinferOn")
+        end
+    end
+end
+
+map("n", "<leader>p", smart_paste("p"), { desc = "Smart paste after (parinfer-safe)" })
+map("n", "<leader>P", smart_paste("P"), { desc = "Smart paste before (parinfer-safe)" })
