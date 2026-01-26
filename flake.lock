@@ -1,47 +1,5 @@
 {
   "nodes": {
-    "crane": {
-      "locked": {
-        "lastModified": 1767744144,
-        "narHash": "sha256-9/9ntI0D+HbN4G0TrK3KmHbTvwgswz7p8IEJsWyef8Q=",
-        "owner": "ipetkov",
-        "repo": "crane",
-        "rev": "2fb033290bf6b23f226d4c8b32f7f7a16b043d7e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ipetkov",
-        "repo": "crane",
-        "type": "github"
-      }
-    },
-    "fff-nvim": {
-      "inputs": {
-        "crane": "crane",
-        "flake-utils": [
-          "flake-utils"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "rust-overlay": [
-          "rust-overlay"
-        ]
-      },
-      "locked": {
-        "lastModified": 1767943545,
-        "narHash": "sha256-+Evh9OBrObbjcCoOLn9m3anaogNJBX8GHi3xOB2FRUE=",
-        "owner": "dmtrKovalenko",
-        "repo": "fff.nvim",
-        "rev": "5ab271ea9da084495d18e3f90f47aa6a87289b01",
-        "type": "github"
-      },
-      "original": {
-        "owner": "dmtrKovalenko",
-        "repo": "fff.nvim",
-        "type": "github"
-      }
-    },
     "flake-compat": {
       "locked": {
         "lastModified": 1767039857,
@@ -78,26 +36,6 @@
       }
     },
     "flake-utils": {
-      "inputs": {
-        "systems": [
-          "systems"
-        ]
-      },
-      "locked": {
-        "lastModified": 1731533236,
-        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "flake-utils_2": {
       "inputs": {
         "systems": "systems_2"
       },
@@ -377,10 +315,8 @@
     },
     "root": {
       "inputs": {
-        "fff-nvim": "fff-nvim",
         "flake-compat": "flake-compat",
         "flake-parts": "flake-parts",
-        "flake-utils": "flake-utils",
         "gen-luarc": "gen-luarc",
         "git-hooks": "git-hooks",
         "import-tree": "import-tree",
@@ -388,30 +324,9 @@
         "neovim-nightly-overlay": "neovim-nightly-overlay",
         "nixpkgs": "nixpkgs",
         "nvim-treesitter-main": "nvim-treesitter-main",
-        "rust-overlay": "rust-overlay",
         "systems": "systems",
         "tree-sitter-luna": "tree-sitter-luna",
         "treefmt-nix": "treefmt-nix"
-      }
-    },
-    "rust-overlay": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1768791178,
-        "narHash": "sha256-ZVqH14w7y40DEQOghli1c28NopVNFk1MNNRzEIwMa6M=",
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "rev": "3941028eccc4d981f75c933786e1fd95b71024f1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "type": "github"
       }
     },
     "systems": {
@@ -446,7 +361,7 @@
     },
     "tree-sitter-luna": {
       "inputs": {
-        "flake-utils": "flake-utils_2",
+        "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {

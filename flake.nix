@@ -56,26 +56,26 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    fff-nvim = {
-      url = "github:dmtrKovalenko/fff.nvim";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        flake-utils.follows = "flake-utils";
-        rust-overlay.follows = "rust-overlay";
-      };
-    };
+    # fff-nvim = {
+    #   url = "github:dmtrKovalenko/fff.nvim";
+    #   inputs = {
+    #     nixpkgs.follows = "nixpkgs";
+    #     flake-utils.follows = "flake-utils";
+    #     rust-overlay.follows = "rust-overlay";
+    #   };
+    # };
 
-    rust-overlay = {
-      url = "github:oxalica/rust-overlay";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # rust-overlay = {
+    #   url = "github:oxalica/rust-overlay";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     # This is necessary since fff-nvim depends on flake-utils, which depends on systems
-    flake-utils = {
-      url = "github:numtide/flake-utils";
-      inputs = {
-        systems.follows = "systems";
-      };
-    };
+    # flake-utils = {
+    #   url = "github:numtide/flake-utils";
+    #   inputs = {
+    #     systems.follows = "systems";
+    #   };
+    # };
   };
 }
