@@ -390,6 +390,19 @@
       "url": "https://github.com/rose-pine/neovim/archive/cf2a288696b03d0934da713d66c6d71557b5c997.tar.gz",
       "hash": "sha256-rwCsGLt2XwGvHN7DMgt3j9yKPNc2LVUfHYPECHx5xG8="
     },
+    "seeker.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "2KAbhishek",
+        "repo": "seeker.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "ac773e0727245ec2d7236a8e7f2e55108f2699a9",
+      "url": "https://github.com/2KAbhishek/seeker.nvim/archive/ac773e0727245ec2d7236a8e7f2e55108f2699a9.tar.gz",
+      "hash": "sha256-6G2hLpwhinni8Bzobk3Ktx5QiY6/XRmGGIIYhaqWoeE="
+    },
     "snacks.nvim": {
       "type": "Git",
       "repository": {
