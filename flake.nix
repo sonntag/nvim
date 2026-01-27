@@ -1,25 +1,25 @@
 {
   description = "Justin's Neovim Config";
 
-  # nixConfig = {
-  #   substitutors = [
-  #     "https://sonntag.cachix.org"
-  #   ];
-  #   trusted-public-keys = [
-  #     "sonntag.cachix.org-1:4rHXwjmC/EpRwVkCyH0xLQaoeZT9C0oq8TINGSap1Wk="
-  #   ];
-  # };
-
   outputs = inputs: inputs.flake-parts.lib.mkFlake {inherit inputs;} (inputs.import-tree ./modules);
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    # nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/b579d443b37c9c5373044201ea77604e37e748c8";
     systems.url = "github:nix-systems/default";
     flake-compat.url = "github:edolstra/flake-compat";
     import-tree.url = "github:vic/import-tree";
     mnw.url = "github:Gerg-L/mnw";
-    tree-sitter-luna.url = "github:sonntag/tree-sitter-luna";
-    nvim-treesitter-main.url = "github:iofq/nvim-treesitter-main";
+
+    tree-sitter-luna = {
+      url = "github:sonntag/tree-sitter-luna";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    nvim-treesitter-main = {
+      url = "github:iofq/nvim-treesitter-main";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
