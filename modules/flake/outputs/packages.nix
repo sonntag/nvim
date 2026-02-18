@@ -55,6 +55,7 @@
           mdformat
           marksman
           nixd
+          prettierd
           ripgrep
         ];
 
