@@ -256,9 +256,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "8f0e97b50e6f7bcc04e5f4eaefc558ff96e0beaf",
-      "url": "https://github.com/sonntag/nvim-code-blocks/archive/8f0e97b50e6f7bcc04e5f4eaefc558ff96e0beaf.tar.gz",
-      "hash": "sha256-B+J37OkMYon/yUony1Bsvx1flohP7j4tpFffBKEdCmM="
+      "revision": "c396e425958c4ffae87cf530fa3076898fa7c54f",
+      "url": "https://github.com/sonntag/nvim-code-blocks/archive/c396e425958c4ffae87cf530fa3076898fa7c54f.tar.gz",
+      "hash": "sha256-Uhpl+OM5KEvsMwPaL4nlU1Kg2nieTGb8qa+meBz/Tm0="
     },
     "nvim-lspconfig": {
       "type": "Git",
