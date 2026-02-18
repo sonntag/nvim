@@ -4,7 +4,6 @@
     self',
     inputs',
     pkgs,
-    system,
     ...
   }: let
     # Build Luna grammar as a plugin with parser and queries
@@ -37,7 +36,7 @@
       optPlugins = with pkgs.vimPlugins;
         [
           blink-cmp
-          inputs.fff-nvim.packages.${system}.fff-nvim
+          # inputs.fff-nvim.packages.${system}.fff-nvim
           nvim-treesitter.withAllGrammars
         ]
         ++ inputs.mnw.lib.npinsToPlugins pkgs ../../../plugins.json;

@@ -20,7 +20,7 @@ return {
                 typescript = { "prettierd", "prettier", stop_after_first = true },
                 typescriptreact = { "prettierd", "prettier", stop_after_first = true },
                 lua = { "stylua" },
-                markdown = { "mdformat" },
+                -- markdown = { "mdformat" },
                 nix = { "alejandra" },
             },
         })

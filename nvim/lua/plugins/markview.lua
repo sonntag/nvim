@@ -34,4 +34,5 @@ return {
         })
     end,
     event = "DeferredUIEnter",
+    enabled = false,
 }
