@@ -169,6 +169,19 @@
       "url": "https://github.com/brianhuster/live-preview.nvim/archive/c1fcf75c5f9c9c01dd392852de44204b60f1b5b1.tar.gz",
       "hash": "sha256-8R4WNFKMz72MoycBK736A5YC8NH1K8TBea2Px4udGZ8="
     },
+    "lua-utils.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvim-neorg",
+        "repo": "lua-utils.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "e565749421f4bbb5d2e85e37c3cef9d56553d8bd",
+      "url": "https://github.com/nvim-neorg/lua-utils.nvim/archive/e565749421f4bbb5d2e85e37c3cef9d56553d8bd.tar.gz",
+      "hash": "sha256-9ildzQEMkXKZ3LHq+khGFgRQFxlIXQclQ7QU3fcU1C4="
+    },
     "markview.nvim": {
       "type": "Git",
       "repository": {
@@ -247,6 +260,32 @@
       "url": "https://github.com/nvim-mini/mini.surround/archive/d205d1741d1fcc1f3117b4e839bf00f74ad72fa2.tar.gz",
       "hash": "sha256-Cywra3S8oOwwx7VoL2CvfWDtAJlmyIZw6gxTeAXVr2Q="
     },
+    "neorg": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvim-neorg",
+        "repo": "neorg"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "338f601c7c164e7e3ded7539f209c1f12344a5d5",
+      "url": "https://github.com/nvim-neorg/neorg/archive/338f601c7c164e7e3ded7539f209c1f12344a5d5.tar.gz",
+      "hash": "sha256-ifCD/EZVS53qRxolq7MK8IhuUPFx520HAAiPQk2AeX0="
+    },
+    "nui.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "MunifTanjim",
+        "repo": "nui.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "de740991c12411b663994b2860f1a4fd0937c130",
+      "url": "https://github.com/MunifTanjim/nui.nvim/archive/de740991c12411b663994b2860f1a4fd0937c130.tar.gz",
+      "hash": "sha256-41slmnvt1z7sCxvpiVuFmQ9g7eCaxQi1dDCL3AxSL1A="
+    },
     "nvim-code-blocks": {
       "type": "Git",
       "repository": {
@@ -272,6 +311,19 @@
       "revision": "841c6d4139aedb8a3f2baf30cef5327371385b93",
       "url": "https://github.com/neovim/nvim-lspconfig/archive/841c6d4139aedb8a3f2baf30cef5327371385b93.tar.gz",
       "hash": "sha256-1wmf28UMTt0ZTD8w66OieP+YYkht3n4bOkoNa4dD6/0="
+    },
+    "nvim-nio": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nvim-neotest",
+        "repo": "nvim-nio"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "21f5324bfac14e22ba26553caf69ec76ae8a7662",
+      "url": "https://github.com/nvim-neotest/nvim-nio/archive/21f5324bfac14e22ba26553caf69ec76ae8a7662.tar.gz",
+      "hash": "sha256-eDbzJAGdUBhTwuD0Nt9FihZj1MmVdQfn/GKIybuu5a8="
     },
     "nvim-paredit": {
       "type": "Git",
@@ -350,6 +402,19 @@
       "revision": "e99a88f0f0b1234f49a3efe9c49b712b58a5acfc",
       "url": "https://github.com/dundalek/parpar.nvim/archive/e99a88f0f0b1234f49a3efe9c49b712b58a5acfc.tar.gz",
       "hash": "sha256-H7cuzjSTimzWYDSDAs6CnhivAoEzU0E+QgrFBzXBwCc="
+    },
+    "pathlib.nvim": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "pysan3",
+        "repo": "pathlib.nvim"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "57e5598af6fe253761c1b48e0b59b7cd6699e2c1",
+      "url": "https://github.com/pysan3/pathlib.nvim/archive/57e5598af6fe253761c1b48e0b59b7cd6699e2c1.tar.gz",
+      "hash": "sha256-YhCJeNKlcjgg3q51UWFhuIEPzNueC8YTpeuPPJDndvw="
     },
     "plenary.nvim": {
       "type": "Git",
