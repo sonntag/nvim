@@ -22,9 +22,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "61892d67acd5b7c845f5da4d780b26fcd7f63e34",
-      "url": "https://github.com/okuuva/auto-save.nvim/archive/61892d67acd5b7c845f5da4d780b26fcd7f63e34.tar.gz",
-      "hash": "sha256-ns7MB6eg6HK5tMczsRFC2UXT8/ttv+EBw+S/ma8o4PE="
+      "revision": "9aabcb8396224dcbf8d51c0c1d620d88a46e89d7",
+      "url": "https://github.com/okuuva/auto-save.nvim/archive/9aabcb8396224dcbf8d51c0c1d620d88a46e89d7.tar.gz",
+      "hash": "sha256-udN8ETRYKmVEeu+/2J6yZHnnBWtnLV7yKiOY0AvS8rg="
     },
     "blame.nvim": {
       "type": "Git",
@@ -48,9 +48,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "d5551b1aac60e164fb569eba422ea9b65cd2d6f4",
-      "url": "https://github.com/olimorris/codecompanion.nvim/archive/d5551b1aac60e164fb569eba422ea9b65cd2d6f4.tar.gz",
-      "hash": "sha256-ROZJDnTdBloQ4kgRV5TSiAdxuNb99GlyTPbu4MnVNcc="
+      "revision": "c1a932ea07817bba01b84b0e242cf19b8288b179",
+      "url": "https://github.com/olimorris/codecompanion.nvim/archive/c1a932ea07817bba01b84b0e242cf19b8288b179.tar.gz",
+      "hash": "sha256-NU06hvuCm7YmfG0J4fNNaPZsSrRCVvL5HUGDifSbvTI="
     },
     "conform.nvim": {
       "type": "Git",
@@ -74,9 +74,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "23718a259a03be9d72a05bef6d76bea789e46b5c",
-      "url": "https://github.com/Olical/conjure/archive/23718a259a03be9d72a05bef6d76bea789e46b5c.tar.gz",
-      "hash": "sha256-vhzhjQBMWViXEsPV6O0U3GP8LyLEPCQKBVWdFZUB+ng="
+      "revision": "ecf783607efaf33c69c6f80a737a93d572cfc688",
+      "url": "https://github.com/Olical/conjure/archive/ecf783607efaf33c69c6f80a737a93d572cfc688.tar.gz",
+      "hash": "sha256-cluKVeixP+IudHvvs32+bSSre52xWxrxJcmaKBpVA9c="
     },
     "copilot-lsp": {
       "type": "Git",
@@ -100,9 +100,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "0552b44fceedf0c4cba2cd4953d3976633b2509a",
-      "url": "https://github.com/zbirenbaum/copilot.lua/archive/0552b44fceedf0c4cba2cd4953d3976633b2509a.tar.gz",
-      "hash": "sha256-PULc9fiFljpomXDBY1HeJDttImQf7lYprpNEx5MZO4Y="
+      "revision": "0a3e09122cfd21e62a1e9d183c61aa1cacdd7da6",
+      "url": "https://github.com/zbirenbaum/copilot.lua/archive/0a3e09122cfd21e62a1e9d183c61aa1cacdd7da6.tar.gz",
+      "hash": "sha256-p32hL8OGeIxoyD9Vup2XLfuF2tGi+67Ya5LCloMo8mg="
     },
     "diffview.nvim": {
       "type": "Git",
@@ -139,9 +139,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "7c4faa3540d0781a28588cafbd4dd187a28ac6e3",
-      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/7c4faa3540d0781a28588cafbd4dd187a28ac6e3.tar.gz",
-      "hash": "sha256-OSSoVBy4X/+V5Bimg7nFormMUugxH/iEoiA6RJFWRnI="
+      "revision": "50c205548d8b037b7ff6378fca6d21146f0b6161",
+      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/50c205548d8b037b7ff6378fca6d21146f0b6161.tar.gz",
+      "hash": "sha256-mQVVa1z+2GB5DreiBv6LkCyjzj6Kx/LrpsAt8y9VoaE="
     },
     "image.nvim": {
       "type": "Git",
@@ -308,9 +308,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "841c6d4139aedb8a3f2baf30cef5327371385b93",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/841c6d4139aedb8a3f2baf30cef5327371385b93.tar.gz",
-      "hash": "sha256-1wmf28UMTt0ZTD8w66OieP+YYkht3n4bOkoNa4dD6/0="
+      "revision": "16812abf0e8d8175155f26143a8504e8253e92b0",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/16812abf0e8d8175155f26143a8504e8253e92b0.tar.gz",
+      "hash": "sha256-VphxSwOvwxJFGrn1w9YPnjihVw7BpOgCPdt/joCyBnU="
     },
     "nvim-nio": {
       "type": "Git",
@@ -386,9 +386,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "4796602953348e19fb24916557af7b89e188751f",
-      "url": "https://github.com/jmbuhr/otter.nvim/archive/4796602953348e19fb24916557af7b89e188751f.tar.gz",
-      "hash": "sha256-L4MMWXyAZGrdhKiiTQz93nOMSAUnO8k+UQUOSl4GJ4s="
+      "revision": "a455e68a99d395889ab30a25ac3846a135e93c46",
+      "url": "https://github.com/jmbuhr/otter.nvim/archive/a455e68a99d395889ab30a25ac3846a135e93c46.tar.gz",
+      "hash": "sha256-kTDFzud+Kx3YAI36QhEi+WjVkB6Owao7PdUBX3mLXKw="
     },
     "parpar.nvim": {
       "type": "Git",
