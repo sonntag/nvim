@@ -48,9 +48,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "680c445eb357c72129d175ea5d481aa9e92ae6a5",
-      "url": "https://github.com/olimorris/codecompanion.nvim/archive/680c445eb357c72129d175ea5d481aa9e92ae6a5.tar.gz",
-      "hash": "sha256-z8zcGgq5CBq5OlUZ+GfcvCgVrrFdGUMpJYR0duMigXA="
+      "revision": "e003fac48f8af4fc2d4ece3ee2f6f1897f71b912",
+      "url": "https://github.com/olimorris/codecompanion.nvim/archive/e003fac48f8af4fc2d4ece3ee2f6f1897f71b912.tar.gz",
+      "hash": "sha256-q0hEFAYH7XMMe+hCAiXF4mT5aUASRFY1YQNDNbIv6Lc="
     },
     "conform.nvim": {
       "type": "Git",
@@ -100,9 +100,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "ad7e729e9a6348f7da482be0271d452dbc4c8e2c",
-      "url": "https://github.com/zbirenbaum/copilot.lua/archive/ad7e729e9a6348f7da482be0271d452dbc4c8e2c.tar.gz",
-      "hash": "sha256-9e5nJI+ugkolwdzQ4/KT6Gz1rpSbOSnLfdUWT9LDJg0="
+      "revision": "aeca454727486d488a6ecbcde30db72e741e3524",
+      "url": "https://github.com/zbirenbaum/copilot.lua/archive/aeca454727486d488a6ecbcde30db72e741e3524.tar.gz",
+      "hash": "sha256-onv2/zCT4ru18v1pJzaHzpoaT6DIRVTIwp25li9iehM="
     },
     "diffview.nvim": {
       "type": "Git",
@@ -139,9 +139,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "8d82c240f190fc33723d48c308ccc1ed8baad69d",
-      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/8d82c240f190fc33723d48c308ccc1ed8baad69d.tar.gz",
-      "hash": "sha256-25ZzIHE+LxEfl4TjCPgCj5rRrB1F2sgPDygvC1PLGxs="
+      "revision": "6d808f99bd63303646794406e270bd553ad7792e",
+      "url": "https://github.com/lewis6991/gitsigns.nvim/archive/6d808f99bd63303646794406e270bd553ad7792e.tar.gz",
+      "hash": "sha256-+pXpWJkI2OMheakH5NNtUpKJbq4LN2ejCEN9/Qaxh4Y="
     },
     "image.nvim": {
       "type": "Git",
@@ -191,9 +191,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "1861f959599ae03cfd59f56222a542035b0cd947",
-      "url": "https://github.com/OXY2DEV/markview.nvim/archive/1861f959599ae03cfd59f56222a542035b0cd947.tar.gz",
-      "hash": "sha256-T6ZVy7o9sSGa2vOolvmL7KO3cXkyEwJ9F4n6BbWdPGk="
+      "revision": "e27dee8b2a61f89ac3a06deae0264ad1d3f7b62c",
+      "url": "https://github.com/OXY2DEV/markview.nvim/archive/e27dee8b2a61f89ac3a06deae0264ad1d3f7b62c.tar.gz",
+      "hash": "sha256-O4g4anikzdXJGYKoIF70r4eVyd3md6ddoxQ0GzKhqkE="
     },
     "mini.ai": {
       "type": "Git",
@@ -217,9 +217,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "7fdae2443a0e2910015ca39ad74b50524ee682d3",
-      "url": "https://github.com/nvim-mini/mini.icons/archive/7fdae2443a0e2910015ca39ad74b50524ee682d3.tar.gz",
-      "hash": "sha256-rcoCa3/F/LmU3l3RYF14pjYa14f6ILN+1Rl9neBhxeI="
+      "revision": "bac6317300e205335df425296570d84322730067",
+      "url": "https://github.com/nvim-mini/mini.icons/archive/bac6317300e205335df425296570d84322730067.tar.gz",
+      "hash": "sha256-/arujhZe9m9VB5nZ0xzCZjkxu4ai9Rfit7y6RwrLf7s="
     },
     "mini.keymap": {
       "type": "Git",
@@ -308,9 +308,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "8a9378a822719346a0288fa004dab302ca3c0a8f",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/8a9378a822719346a0288fa004dab302ca3c0a8f.tar.gz",
-      "hash": "sha256-y7OgmBs1baqNbLfI80CmGSJOgZi0xcOsJOhyZmsKJP8="
+      "revision": "4b7fbaa239c5db6b36f424a4521ca9f1a401be33",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/4b7fbaa239c5db6b36f424a4521ca9f1a401be33.tar.gz",
+      "hash": "sha256-RZs2wqVgGy6TNBWZifoj+58gIpNC0kZtt5MiNPQ38+U="
     },
     "nvim-nio": {
       "type": "Git",
@@ -503,9 +503,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "57a0eb84b2008c76e77930639890d9874195b1e1",
-      "url": "https://github.com/rachartier/tiny-inline-diagnostic.nvim/archive/57a0eb84b2008c76e77930639890d9874195b1e1.tar.gz",
-      "hash": "sha256-mJl6yuTH79QsfKRktBGzPOlnL1x3/KoOAWyDGGw/AwM="
+      "revision": "b3b91e086795c036ecfe70429b72b26bcb302c91",
+      "url": "https://github.com/rachartier/tiny-inline-diagnostic.nvim/archive/b3b91e086795c036ecfe70429b72b26bcb302c91.tar.gz",
+      "hash": "sha256-yYxwyXuOIb+Ac5f8OonwsJny00bqfL7cWDtcjsVtP5o="
     },
     "todo-comments.nvim": {
       "type": "Git",
