@@ -56,6 +56,7 @@
           nixd
           prettierd
           ripgrep
+          typescript-language-server
         ];
 
         extraLuaPackages = ps: [
