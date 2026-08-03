@@ -48,9 +48,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "b64ce79484ad407d127c245cc5a35eba520201d6",
-      "url": "https://github.com/olimorris/codecompanion.nvim/archive/b64ce79484ad407d127c245cc5a35eba520201d6.tar.gz",
-      "hash": "sha256-pDLJQx9fL691IDp3SzekszNu2lVxVZssTfrA4B7mTGg="
+      "revision": "0dc8c503d5eeae0dd5696538a2a5ad117da96cb0",
+      "url": "https://github.com/olimorris/codecompanion.nvim/archive/0dc8c503d5eeae0dd5696538a2a5ad117da96cb0.tar.gz",
+      "hash": "sha256-nobF6Ofcuo6DMSlRzIIRf2e+VB8gpekeCpmzL8MAMoM="
     },
     "conform.nvim": {
       "type": "Git",
@@ -100,9 +100,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "0f616b9a51cb9e2498834dfd99f6da6966158eba",
-      "url": "https://github.com/zbirenbaum/copilot.lua/archive/0f616b9a51cb9e2498834dfd99f6da6966158eba.tar.gz",
-      "hash": "sha256-q+fEVgD++V0znhXt1OX6V9za0TcGuPQP6g+nTYXVFeo="
+      "revision": "261e70f26e6c02562495f900399234c4e26daa2f",
+      "url": "https://github.com/zbirenbaum/copilot.lua/archive/261e70f26e6c02562495f900399234c4e26daa2f.tar.gz",
+      "hash": "sha256-hninrJMQ1JSqLLJjSN4tT9UjN18XeXJXy1VLVv039Kk="
     },
     "diffview.nvim": {
       "type": "Git",
@@ -308,9 +308,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "7ab79bb1b57160a537f427ac8a6026102f12b701",
-      "url": "https://github.com/neovim/nvim-lspconfig/archive/7ab79bb1b57160a537f427ac8a6026102f12b701.tar.gz",
-      "hash": "sha256-DP6osN9M8wTYqIAmTX6R+wzoSV3BhFonDjPZd3Kv0y4="
+      "revision": "1c0d8f70dbc8827263eedc3cf7021ceba0f68689",
+      "url": "https://github.com/neovim/nvim-lspconfig/archive/1c0d8f70dbc8827263eedc3cf7021ceba0f68689.tar.gz",
+      "hash": "sha256-wQI5ZcMjC57y+o2a2pqr2e9d7FAkgDQfXo9ILny3FqM="
     },
     "nvim-nio": {
       "type": "Git",
@@ -360,9 +360,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "b311b30818951d01f7b4bf650521b868b3fece16",
-      "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/b311b30818951d01f7b4bf650521b868b3fece16.tar.gz",
-      "hash": "sha256-2FkJvQMN0ktaNiyVLjcUUBvQNW9VHY6X4FscI1U3QhY="
+      "revision": "f3061339b8eaf9fda873600bc425b8d2d8502533",
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter-context/archive/f3061339b8eaf9fda873600bc425b8d2d8502533.tar.gz",
+      "hash": "sha256-1aCV2J243C28+hiTMacVcLfEfVRYfpnLBQgCoOX24gM="
     },
     "oil.nvim": {
       "type": "Git",
